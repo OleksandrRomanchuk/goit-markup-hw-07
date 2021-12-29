@@ -1,0 +1,26 @@
+.advantages-list {
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+
+    // margin-left: -30px;
+
+    list-style: none;
+}
+
+.advantages-list__item {
+    width: 270px;
+}
+
+.advantages-list__item-icon {
+    width: 270px;
+}
+
+.advantages-list__item-title {
+    margin-top: 30px;
+}
+
+.advantages-list__item-text {
+    margin-top: 10px;
+}

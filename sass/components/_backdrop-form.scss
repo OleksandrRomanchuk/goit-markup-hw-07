@@ -1,0 +1,136 @@
+.backdrop-form {
+    margin-top: 12px;
+}
+
+.backdrop-form__group {
+    position: relative
+    ;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.backdrop-form__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-font-color;
+}
+
+.backdrop-form__input {
+    display: block;
+    margin-top: 4px;
+    padding: 11px 12px 11px 35px;
+
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-font-color;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border $transition-time-function;
+
+    &:hover, &:focus {
+        border: 1px solid $brand-color;
+        outline-color: $brand-color;
+    }
+}
+
+.backdrop-form__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    pointer-events: none;
+
+    transition: fill $transition-time-function;
+
+    .backdrop-form__input:hover + &,
+    .backdrop-form__input:focus + & {
+        fill: $brand-color;
+    }
+}
+
+.backdrop__comment {
+    display: block;
+
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+
+    &::placeholder {
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    }
+
+}
+
+.backdrop-form__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.backdrop-form__button {
+    margin-top: 30px;
+}
+
+.checkbox-button {
+    display: inline-block;
+
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+
+    background-color: $main-white-color;
+    border: 2px solid $main-black-color;
+    border-radius: 2px;
+
+    background-image: url(/images/checkbox-button.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: background-color $transition-time-function, border $transition-time-function;
+
+    &:hover, &:focus {
+        border: $brand-color;
+    }
+
+    .backdrop-form__checkbox--checked:hover + &, 
+    .backdrop-form__checkbox--checked:focus + & {
+        border: 2px solid $brand-color;
+    }
+
+    .backdrop-form__checkbox--checked:checked + & {
+        background-color: $brand-color;
+        border: $brand-color;
+        background-origin: border-box;
+    }
+
+}
+
+.backdrop-form__terms {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.backdrop-form__button {
+    padding-right: 55px;
+    padding-left: 55px;
+}

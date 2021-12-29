@@ -1,0 +1,51 @@
+@import "./utiles/variables";
+
+
+// common-components
+@import "./components/class-for-body-style";
+@import "./components/visualy-hidden";
+@import "./components/section";
+@import "./components/container";
+@import "./components/contacts";
+@import "./components/button";
+@import "./components/card-wrapper";
+@import "./components/social-networks";
+
+// header-section
+@import "./components/header-border";
+@import "./components/site-nav";
+@import "./components/logo";
+
+// footer
+@import "./components/class-for-footer";
+@import "./components/add";
+@import "./components/subscribe-form";
+
+// studio-page
+// hero-section
+@import "./components/hero-section";
+
+// advantages-section
+@import "./components/advantages-list";
+
+// services-section
+@import "./components/services-section";
+
+// team-section
+@import "./components/team-list";
+
+// clients-section
+@import "./components/clients-list";
+
+// backdrop
+@import './components/backdrop';
+@import './components/modal';
+@import './components/backdrop-form';
+
+
+// portfolio-page
+// portfolio-section
+@import "./components/filters";
+@import "./components/portfolio-list"
+
+
