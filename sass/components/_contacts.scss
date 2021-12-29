@@ -1,15 +1,17 @@
 .contacts {
     display: flex;
-    align-items: center;
-
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: auto;
     padding-left: 0;
     
     list-style: none;
 
-    &-add {
+    &--for-header {
+        align-items: center;
+        margin-left: auto;
+    }
+
+    &--for-footer {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 9px;
@@ -20,27 +22,15 @@
     &:not(:first-child) {
         margin-left: 30px;
     }
-}
 
-.contacts-add__contact {
-    &:not(:first-child) {
+    &--for-footer:not(:first-child) {
         margin-top: 9px;
         margin-left: 0;
     }
 }
 
 .contacts__link {
-    display: flex;
-    align-items: center;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $primary-font-color;
     text-decoration: none;
 
     transition: color $transition-time-function;
@@ -49,16 +39,26 @@
         color: $brand-color;
     }
 
-    .contacts-add & {
-       padding: 0;
+    &--for-header {
+        display: flex;
+        align-items: center;
 
-       font-size: 14px;
-       font-weight: 400;
-       line-height: 1.71;
-       letter-spacing: 0.03em;
-   
-       color: rgba(255, 255, 255, 0.6);
-       
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $primary-font-color;
+    }
+
+    &--for-footer {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
     }
 }
 

@@ -17,31 +17,22 @@
 .card-wrapper__title {
     margin-top: 0;
     margin-bottom: 0;
-}
 
-.card-wrapper__title--uppercase {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    font-weight: 700;
     font-size: $primary-font-size;
     line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 
-.card-wrapper__title--white {
-    margin-top: 0;
-    margin-bottom: 0;
+    &--uppercase {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
-    color: $main-white-color;
-}
+    &--white {
+        color: $main-white-color;
+    }
 
-.card-wrapper__title--black {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    color: $main-black-color;
+    &--black {
+        color: $main-black-color;
+    }
 }
 
 .card-wrapper__text {
@@ -50,14 +41,10 @@
     
     font-size: 14px;
     line-height: 1.71; 
-    letter-spacing: 0.03em;  
     color: $primary-font-color;
 }
 
-.card-wrapper__image {
-    display: block;
-}
-
+.card-wrapper__image, 
 .card-wrapper__link {
     display: block;
 }

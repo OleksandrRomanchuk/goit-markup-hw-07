@@ -32,10 +32,10 @@
     &:hover, &:focus {
         background-color: $brand-color;
     }
-}
 
-.social-networks__link--dark {
-    background-color: rgba(255, 255, 255, 0.1);
+    &--dark {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }
 
 .social-networks__icon {
@@ -46,8 +46,9 @@
     .social-networks__link:focus & {
         fill: $main-white-color;
     }
+
+    &--white {
+        fill: $main-white-color;
+    }
 }
 
-.social-networks__icon--white {
-    fill: $main-white-color;
-}

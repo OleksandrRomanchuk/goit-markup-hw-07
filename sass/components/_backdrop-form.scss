@@ -3,10 +3,7 @@
 }
 
 .backdrop-form__group {
-    position: relative
-    ;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 
     &:not(:first-child) {
         margin-top: 10px;
@@ -22,6 +19,8 @@
 
 .backdrop-form__input {
     display: block;
+
+    width: 100%;
     margin-top: 4px;
     padding: 11px 12px 11px 35px;
 
@@ -59,7 +58,7 @@
 .backdrop__comment {
     display: block;
 
-    width: 448px;
+    width: 100%;
     height: 120px;
     padding: 12px 16px;
     margin-top: 4px;
@@ -98,15 +97,10 @@
     
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     text-align: center;
     color: $primary-font-color;
 
     cursor: pointer;
-}
-
-.backdrop-form__button {
-    margin-top: 30px;
 }
 
 .checkbox-button {
@@ -120,7 +114,7 @@
     border: 2px solid $main-black-color;
     border-radius: 2px;
 
-    background-image: url(/images/checkbox-button.svg);
+    background-image: url(.../images/checkbox-button.svg);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -149,6 +143,7 @@
 }
 
 .backdrop-form__button {
+    margin-top: 30px;
     padding-right: 55px;
     padding-left: 55px;
 }

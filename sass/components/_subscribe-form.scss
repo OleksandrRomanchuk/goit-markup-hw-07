@@ -2,20 +2,19 @@
     display: flex;
     align-items: flex-end;
     margin-left: auto;
+}
 
-    &__group {
-        display: flex;
-        flex-direction: column;
-    }
+.subscribe-form__group {
+    display: flex;
+    flex-direction: column;
 }
 
 .subscribe-form__label {
-font-weight: 700;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
 
-color: $main-white-color;
+    color: $main-white-color;
 }
 
 .subscribe-form__input {
@@ -40,7 +39,6 @@ color: $main-white-color;
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
-        letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
     }
