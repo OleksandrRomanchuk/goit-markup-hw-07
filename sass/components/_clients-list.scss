@@ -33,7 +33,8 @@
 
     transition: fill $transition-time-function;
 
-    &:hover, &:focus {
+    .clients-list__link:hover &,
+    .clients-list__link:focus & {
         fill: $brand-color;
     }
 }

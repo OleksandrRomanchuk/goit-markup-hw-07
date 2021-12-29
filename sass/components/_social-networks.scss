@@ -39,6 +39,15 @@
 }
 
 .social-networks__icon {
-    fill: $main-white-color;
+    fill: #AFB1B8;
     transition: fill $transition-time-function;
+
+    .social-networks__link:hover &,
+    .social-networks__link:focus & {
+        fill: $main-white-color;
+    }
+}
+
+.social-networks__icon--white {
+    fill: $main-white-color;
 }
