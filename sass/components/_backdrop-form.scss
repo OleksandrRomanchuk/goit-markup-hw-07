@@ -114,14 +114,10 @@
     border: 2px solid $main-black-color;
     border-radius: 2px;
 
-    background-image: url(.../images/checkbox-button.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-
     transition: background-color $transition-time-function, border $transition-time-function;
 
     &:hover, &:focus {
-        border: $brand-color;
+        border: 2px solid $brand-color;
     }
 
     .backdrop-form__checkbox--checked:hover + &, 
@@ -130,8 +126,11 @@
     }
 
     .backdrop-form__checkbox--checked:checked + & {
+        background-image: url(../images/checkbox-button.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
         background-color: $brand-color;
-        border: $brand-color;
+        // border: $brand-color;
         background-origin: border-box;
     }
 
