@@ -1,10 +1,6 @@
 .contacts {
+    @include reset-ul;
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    
-    list-style: none;
 
     &--for-header {
         align-items: center;

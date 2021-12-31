@@ -19,15 +19,15 @@
     <link rel="stylesheet" href=".\css\main.min.css" />
 
   </head>
-  <body class="class-for-body-style">
-    <header class="class-for-header-styles">
-      <div class="container container-flex">
+  <body class="body-styles">
+    <header class="header-styles">
+      <div class="container container__flex">
         <nav class="site-nav">
           <a class="logo" href="index.html">Web<span class="logo__second-part--black" >Studio</span></a>
           <ul class="site-nav__links">
             <li class="site-nav__item"><a class="site-nav__link" href="index.html">Студия</a></li>
             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="portfolio.html">Портфолио</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="#cotacts">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
 
@@ -55,7 +55,7 @@
     <main>
 
         <section class="section">
-            <div class="container container-flex container-flex--column">
+            <div class="container container__flex container__flex--column">
                 <h2 class="section__heading visually-hidden">Проекты</h2>
                     <ul class="filters">
                         <li class="filters__item"><button class="button button--grey" type="button">Все</button></li>
@@ -189,12 +189,12 @@
 
     </main>
 
-    <footer class="class-for-footer">
+    <footer class="footer-styles">
 
-      <div class="container container-flex container-flex--baseline">
-        <div class="class-for-footer__positioning--first" id="contacs">
+      <div class="container container__flex container__flex--baseline">
+        <div class="footer-styles__positioning--first">
 
-          <a class="logo" href="">Web<span class="logo__second-part--white">Studio</span></a>
+          <a class="logo" href="index.html">Web<span class="logo__second-part--white" >Studio</span></a>
 
           <address>
             <a class="add-link" href="https://goo.gl/maps/2BE7GuiFPkzLRWHQ9" rel="nofollow noreferrer" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
@@ -213,9 +213,9 @@
           </address>
         </div>
 
-        <div class="class-for-footer__positioning--second">
+        <div class="footer-styles__positioning--second">
           <h2 class="card-wrapper__title card-wrapper__title--uppercase card-wrapper__title--white">присоединяйтесь</h2>
-          <ul class="social-networks class-for-footer__social-networks">
+          <ul class="social-networks footer-styles__social-networks">
             <li class="social-networks__item">
               <a class="social-networks__link social-networks__link--dark" href="https://www.instagram.com/" rel="nofollow noreferrer" target="_blank">
                 <svg class="social-networks__icon social-networks__icon--white" width="20" height="20">
@@ -250,7 +250,7 @@
         <form class="subscribe-form" autocomplete="off">
           <div class="subscribe-form__group">
             <label class="subscribe-form__label">Подпишитесь на рассылку</label>
-            <input class="subscribe-form__input" type="email" placeholder="E-mail">
+            <input class="subscribe-form__input" type="email" placeholder="E-mail" required>
           </div>
           <button class="button button--blue button--with-icon" type="submit">Подписаться 
             <svg class="button__icon--right" width="24" height="24">

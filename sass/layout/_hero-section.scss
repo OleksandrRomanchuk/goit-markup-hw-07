@@ -13,9 +13,8 @@
 
 .hero-section__heading {
     width: 700px;
-    margin-top: 0;
+    @include reset-h-p;
     margin-right: auto;
-    margin-bottom: 0;
     margin-left: auto;
 
     font-weight: 900;

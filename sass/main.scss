@@ -1,51 +1,21 @@
+// utiles
 @import "./utiles/variables";
+@import "./utiles/mixins";
+@import "./utiles/visualy-hidden";
 
-
-// common-components
-@import "./components/class-for-body-style";
-@import "./components/visualy-hidden";
-@import "./components/section";
+// components
+@import "./components/card-wrapper";
 @import "./components/container";
+@import "./components/logo";
 @import "./components/contacts";
 @import "./components/button";
-@import "./components/card-wrapper";
 @import "./components/social-networks";
 
-// header-section
-@import "./components/class-for-header-styles";
-@import "./components/site-nav";
-@import "./components/logo";
-
-// footer
-@import "./components/class-for-footer";
-@import "./components/add";
-@import "./components/subscribe-form";
-
-// studio-page
-// hero-section
-@import "./components/hero-section";
-
-// advantages-section
-@import "./components/advantages-list";
-
-// services-section
-@import "./components/services-section";
-
-// team-section
-@import "./components/team-list";
-
-// clients-section
-@import "./components/clients-list";
-
-// backdrop
-@import './components/backdrop';
-@import './components/modal';
-@import './components/backdrop-form';
-
-
-// portfolio-page
-// portfolio-section
-@import "./components/filters";
-@import "./components/portfolio-list"
-
-
+// layout
+@import "./layout/body";
+@import "./layout/lists";
+@import "./layout/header";
+@import "./layout/hero-section";
+@import "./layout/section";
+@import "./layout/footer";
+@import "./layout/backdrop";

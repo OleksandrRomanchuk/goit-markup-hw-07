@@ -3,19 +3,22 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
-.container-flex {
+.container__flex {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &--baseline {
+        align-items: baseline;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
 }
 
-.container-flex--baseline {
-    align-items: baseline;
-}
 
-.container-flex--column {
-    flex-direction: column;
-}
+

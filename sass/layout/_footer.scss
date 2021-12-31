@@ -1,3 +1,38 @@
+.footer-styles {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-color: $some-section-color;
+}
+
+.footer-styles__positioning {
+    &--second {
+        margin-left: 70px;
+    }
+}
+
+.add-link {
+    display: block;
+
+    margin-top: 20px;
+
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-white-color;
+    text-decoration: none;
+
+    transition: color $transition-time-function;
+
+    &:hover, &:focus {
+        color: $brand-color;
+    }
+}
+
+.footer-styles__social-networks {
+    margin-top: 20px;
+}
+
 .subscribe-form {
     display: flex;
     align-items: flex-end;
